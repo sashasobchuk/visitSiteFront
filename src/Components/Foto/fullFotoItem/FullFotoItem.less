@@ -1,0 +1,93 @@
+@import "../../../acces/colors";
+.FullFotoItem{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0;
+  top:0;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  //background-color: @popup-background;
+  border-left: 10% solid @fullItem-background;
+  border-right: 10% solid @fullItem-background;
+  background-color: @fullItem-background;
+  overflow-y: scroll;
+  margin-bottom: 20%;
+  &__imgDiv{
+    &__img{
+      right: 0;
+      left: 0;
+      top:0;
+      bottom: 0;
+      width: 95%;
+      height: auto;
+      margin: 2.5%;
+      overflow: hidden;
+  
+      //border: 60px  solid #585858;
+  
+  
+    }
+  }
+
+  &__exit{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 45px;
+    background-color: @popup-background;
+    z-index: 7;
+    margin: 2.5%;
+  }
+  &__exit:hover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 55px;
+    background-color: @hover-background;
+    z-index: 7;
+    margin: 2.5%;
+  }
+  &__commentDivs{
+    z-index: 7;
+    display: flex;
+    flex-direction: column;
+    background-color: @fullItem-background;
+    border-radius: 20px;
+    width: 100%;
+
+    &__Item{
+      background-color: @slize-background-color;
+      margin: 5px;
+      border-radius: 10px;
+      min-height: 35px;
+      max-width: 100%;
+      overflow: auto;
+      &__delete{
+
+        justify-self: center;
+        position: absolute;
+        right: 0;
+        background: transparent;
+        margin: 5px 10px;
+        border-radius: 4px;
+      }
+      &__delete:hover{
+        transform: scale(1.3);
+        background-color: @hover-background;
+      }
+
+      }
+  }
+  &__comment{
+    //align-self: center;
+    //justify-self: center;
+    &__input{
+    //left: 60px;
+      //justify-content: end;
+      //justify-items: end;
+      //justify-self: end;
+    }
+  }
+}

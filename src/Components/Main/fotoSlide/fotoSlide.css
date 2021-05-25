@@ -1,0 +1,16 @@
+.slideImg {
+  width: 100%;
+  background-color: #ffffff50;
+  border-radius: 5px;
+}
+.slideImg img {
+  width: 98%;
+  margin: 1%;
+  border-radius: 5px;
+  z-index: 2;
+  height: auto;
+}
+.slideImg img:hover {
+  transform: scale(1.5);
+}
+/*# sourceMappingURL=fotoSlide.css.map */

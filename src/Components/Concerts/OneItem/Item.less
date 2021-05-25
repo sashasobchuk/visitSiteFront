@@ -1,0 +1,189 @@
+@import "../../../acces/colors";
+
+.item{
+  position: relative;
+  width: 100%;
+  overflow-x: visible;
+
+  //padding-left:5%;
+  //padding-right:5%;
+  margin-top:10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between ;
+  background-color: @slize-background-color;
+  border-radius: 10px;
+  color: @font-color;
+  //color: #0f541c;
+  >div {
+    display: block;
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  &__delete{
+    border-radius: 3px ;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    background-color: transparent;
+  }
+  &__imgDiv{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border-radius: 50%;
+    width: 10%;
+    left: 90%;
+    &__doneImg{
+      position: absolute;
+      height:25px;
+      width: auto;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+  }
+  &__status2{
+    width: 30%;
+    text-align: end;
+
+  }
+  &__status{
+    position: absolute;
+    color: red;
+  }
+}
+
+@media screen  and(min-width:250px )and (max-width:650px ){
+
+  .item{
+    position: relative;
+    width: 100%;
+
+    //padding-left:5%;
+    //padding-right:5%;
+    margin-top:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    background-color: @slize-background-color;
+    border-radius: 10px;
+    color: @font-color;
+    //color: #0f541c;
+    >div {
+      display: block;
+      font-size: 20px;
+      margin: 10px;
+      text-align: center;
+    }
+
+    &__delete{
+      border-radius: 3px ;
+      position: absolute;
+      right: 0;
+      font-size: 20px;
+      background-color: transparent;
+    }
+    &__imgDiv{
+      display: none;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      border-radius: 50%;
+      width: 10%;
+      &__doneImg{
+        display: none;
+        position: absolute;
+        height:25px;
+        width: auto;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+    }
+    &__status2{
+      position: absolute;
+      opacity: 0;
+
+      display: none;
+      width: 30%;
+      text-align: end;
+
+    }
+    &__status{
+
+      display: none;
+      position: absolute;
+      color: red;
+    }
+  }
+
+}
+
+@media screen and (max-width:250px ) {
+
+  .item{
+    position: relative;
+    width: 100%;
+    //overflow-y: scroll;
+    overflow-x: scroll;
+
+    //padding-left:5%;
+    //padding-right:5%;
+    margin-top:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    background-color: @slize-background-color;
+    border-radius: 10px;
+    color: @font-color;
+    //color: #0f541c;
+    >div {
+      display: block;
+      font-size: 20px;
+      margin: 10px;
+      text-align: center;
+    }
+
+    &__delete{
+      border-radius: 3px ;
+      position: absolute;
+      right: 0;
+      font-size: 12px;
+      background-color: transparent;
+    }
+    &__imgDiv{
+      display: none;
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      height: 100%;
+      border-radius: 50%;
+      width: 10%;
+      &__doneImg{
+        display: none;
+        position: absolute;
+        height:25px;
+        width: auto;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+    }
+    &__status2{
+      display: none;
+      position: absolute;
+      opacity: 0;
+
+      width: 30%;
+      text-align: end;
+
+    }
+    &__status{
+      opacity: 0;
+      display: none;
+      position: absolute;
+          }
+  }
+
+}
+

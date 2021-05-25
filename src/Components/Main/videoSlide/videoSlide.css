@@ -1,0 +1,23 @@
+.sliderVideo {
+  width: 100%;
+  border-radius: 5px;
+}
+.sliderVideo video {
+  width: 98%;
+  margin: 10px;
+  border-radius: 5px;
+  z-index: 2;
+  height: auto;
+}
+@media screen and (max-width: 550px) {
+  width: 100%;
+  border-radius: 5px;
+  video {
+    width: 98%;
+    margin: 10px;
+    border-radius: 5px;
+    z-index: 2;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=videoSlide.css.map */

@@ -1,0 +1,96 @@
+@import "../../acces/colors";
+
+
+.fotoPage {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-flow: row wrap;
+}
+
+.fotoItem {
+  position: relative;
+
+  flex: auto;
+  width: 320px;
+  margin: 1%;
+  background-color: @slize-background-color;
+  border-radius: 5px;
+  z-index: 0;
+
+
+  &__tittle {
+    position: absolute;
+    width: 100%;
+    font-size: 30px;
+    z-index: 1;
+  }
+
+  &__imgDiv {
+    overflow: hidden;
+    contain: content;
+    object-fit: scale-down;
+    border-radius: 5px;
+  }
+  &__imgDiv:hover{
+  transform: scale(1.05);
+  border: @border-hover solid 2px;
+  }
+  &__deleteItem{
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 2;
+
+    input{
+    background-color: transparent;
+    border: 0;
+    font-size: 30px;
+  }
+    input:hover{
+      background-color: initial;
+      transform: scale(1.5);
+
+    }
+  }
+
+  &__comment {
+    position: relative;
+    height: 160px;
+    overflow: scroll;
+    background-color: transparent;
+
+    &__main {
+      /* for awery 1  comment*/
+      background-color: @slize-background-color;
+      margin: 5px 5px 5px 5px;
+      border-radius: 3px;
+
+    }
+
+    &__main:hover {
+      background-color: @hover-background;
+    }
+
+    &__delete_X {
+      size: 20px;
+      width: 20px;
+      position: absolute;
+      right: 0;
+      color: @standard-items;
+      background-color: @slize-background-color;
+      border-radius: 2px;
+    }
+
+    &__delete_X:hover {
+      transform: scale(1.1);
+      cursor: default;
+      background-color: #3f020b;
+    }
+  }
+  &__comment::-webkit-scrollbar { width: 0; }
+
+}
+
+

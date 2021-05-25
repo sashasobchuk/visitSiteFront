@@ -1,0 +1,123 @@
+.fotoSlider {
+  position: absolute;
+  margin-left: 5% ;
+  margin-right: 5% ;
+  border-radius: 5px;
+  width: 90%;
+  height: auto;
+  min-height: 100px;
+  max-height: 30%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.fotoHidden {
+  display: flex;
+  width: 120%;
+  height: 100%;
+  align-items: center;
+}
+.videoSlider {
+  position: absolute;
+  margin-left: 5% ;
+  margin-right: 5% ;
+  margin-top: 15%;
+  width: 90%;
+  min-height: 45%;
+  max-height: 40%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.hiddenVideo {
+  display: flex;
+  width: auto;
+  height: 50%;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 550px) and (max-width: 850px) {
+  .fotoSlider {
+    position: absolute;
+    margin-left: 5% ;
+    margin-right: 5% ;
+    border-radius: 5px;
+    width: 90%;
+    height: auto;
+    min-height: 150px;
+    max-height: 200px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  .fotoHidden {
+    width: 150%;
+    height: auto;
+    align-items: center;
+  }
+  .fotoHidden img {
+    width: 100%;
+    height: auto;
+  }
+  .videoSlider {
+    position: absolute;
+    margin-left: 5% ;
+    margin-right: 5% ;
+    bottom: 0;
+    margin-bottom: 15%;
+    width: 90%;
+    min-height: 30%;
+    max-height: 40%;
+    overflow: visible;
+  }
+  .hiddenVideo {
+    display: flex;
+    width: auto;
+    height: 50%;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 550px) {
+  .fotoSlider {
+    position: absolute;
+    margin-left: 5% ;
+    margin-right: 5% ;
+    border-radius: 5px;
+    width: 90%;
+    height: auto;
+    min-height: 150px;
+    max-height: 200px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  .fotoHidden {
+    width: 300%;
+    height: auto;
+    align-items: center;
+  }
+  .fotoHidden img {
+    width: 100%;
+    height: auto;
+  }
+  .videoSlider {
+    position: absolute;
+    margin-left: 5% ;
+    margin-right: 5% ;
+    bottom: 0;
+    margin-bottom: 20%;
+    border: double 2px black;
+    width: 90%;
+    min-height: 30%;
+    max-height: 40%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display: flex;
+  }
+  .hiddenVideo {
+    justify-self: stretch;
+    width: 300px;
+    margin: 15px;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+/*# sourceMappingURL=Main.css.map */

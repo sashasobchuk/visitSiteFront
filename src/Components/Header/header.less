@@ -1,0 +1,128 @@
+@import "./../../acces/colors";
+* {
+  box-sizing: border-box
+}
+.allHeader{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+
+  &__leftheader span{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Verdana;
+  }
+
+  &__headerMain{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  &__headerMain div{
+    font-size: 20px;
+    text-transform: none;
+  }
+
+  &__headerMain div a:hover{
+    color: #ff8224;
+    opacity: 1;
+    transform: scale(1.1);
+    background-color: #ffefd240;
+    border-radius: 5px;
+
+  }
+  &__headerMain div a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #ffce4b;
+    font-family: Verdana Andalus SansSerif;
+    font-weight: bold;
+    opacity: 0.9;
+
+  }
+  &__rightHeader{
+    text-align: end;
+    justify-content: right;
+    cursor: default;
+  }
+
+  &__leftheader, &__rightHeader {
+    width: 25vh;
+    align-self: center;
+    font-size: 1.15rem;
+    color:  #fffa5f50;
+  }
+}
+
+@media screen and (max-width:550px ){
+  .allHeader{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: center;
+
+    &__headerMain{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+    &__headerMain div{
+      font-size: 20px;
+      text-transform: none;
+    }
+
+
+    &__headerMain div a {
+      font-size: 24px;
+      text-decoration: none;
+      color: #ffce4b;
+      font-family: Verdana Andalus SansSerif;
+      font-weight: bold;
+      opacity: 0.9;
+    }
+
+    &__headerMain div a:hover{
+      color: #ff8224;
+      opacity: 1;
+      transform: scale(1.1);
+      background-color: #ffefd240;
+      border-radius: 5px;
+
+    }
+
+
+      &__rightHeader{
+        display: none;
+    }
+
+    &__leftheader, &__rightHeader {
+      display: none;
+    }
+  }
+}
+
+
+.active{
+background-color: @activePageColor;
+  border: dotted 1px ;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+

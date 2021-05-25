@@ -1,0 +1,1 @@
+export const hostUrl ='https://rusya-server.herokuapp.com/'

@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+.allHeader {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.allHeader__leftheader span {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: Verdana;
+}
+.allHeader__headerMain {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.allHeader__headerMain div {
+  font-size: 20px;
+  text-transform: none;
+}
+.allHeader__headerMain div a:hover {
+  color: #ff8224;
+  opacity: 1;
+  transform: scale(1.1);
+  background-color: #ffefd240;
+  border-radius: 5px;
+}
+.allHeader__headerMain div a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #ffce4b;
+  font-family: Verdana Andalus SansSerif;
+  font-weight: bold;
+  opacity: 0.9;
+}
+.allHeader__rightHeader {
+  text-align: end;
+  justify-content: right;
+  cursor: default;
+}
+.allHeader__leftheader,
+.allHeader__rightHeader {
+  width: 25vh;
+  align-self: center;
+  font-size: 1.15rem;
+  color: #fffa5f50;
+}
+@media screen and (max-width: 550px) {
+  .allHeader {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .allHeader__headerMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .allHeader__headerMain div {
+    font-size: 20px;
+    text-transform: none;
+  }
+  .allHeader__headerMain div a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #ffce4b;
+    font-family: Verdana Andalus SansSerif;
+    font-weight: bold;
+    opacity: 0.9;
+  }
+  .allHeader__headerMain div a:hover {
+    color: #ff8224;
+    opacity: 1;
+    transform: scale(1.1);
+    background-color: #ffefd240;
+    border-radius: 5px;
+  }
+  .allHeader__rightHeader {
+    display: none;
+  }
+  .allHeader__leftheader,
+  .allHeader__rightHeader {
+    display: none;
+  }
+}
+.active {
+  background-color: #7d6e0b50;
+  border: dotted 1px ;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=header.css.map */

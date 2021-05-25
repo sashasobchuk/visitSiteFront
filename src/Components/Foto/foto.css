@@ -1,0 +1,80 @@
+.fotoPage {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-flow: row wrap;
+}
+.fotoItem {
+  position: relative;
+  flex: auto;
+  width: 320px;
+  margin: 1%;
+  background-color: #ffffff50;
+  border-radius: 5px;
+  z-index: 0;
+}
+.fotoItem__tittle {
+  position: absolute;
+  width: 100%;
+  font-size: 30px;
+  z-index: 1;
+}
+.fotoItem__imgDiv {
+  overflow: hidden;
+  contain: content;
+  object-fit: scale-down;
+  border-radius: 5px;
+}
+.fotoItem__imgDiv:hover {
+  transform: scale(1.05);
+  border: #1e1802 solid 2px;
+}
+.fotoItem__deleteItem {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.fotoItem__deleteItem input {
+  background-color: transparent;
+  border: 0;
+  font-size: 30px;
+}
+.fotoItem__deleteItem input:hover {
+  background-color: initial;
+  transform: scale(1.5);
+}
+.fotoItem__comment {
+  position: relative;
+  height: 160px;
+  overflow: scroll;
+  background-color: transparent;
+}
+.fotoItem__comment__main {
+  /* for awery 1  comment*/
+  background-color: #ffffff50;
+  margin: 5px 5px 5px 5px;
+  border-radius: 3px;
+}
+.fotoItem__comment__main:hover {
+  background-color: #ffffff90;
+}
+.fotoItem__comment__delete_X {
+  size: 20px;
+  width: 20px;
+  position: absolute;
+  right: 0;
+  color: #060606;
+  background-color: #ffffff50;
+  border-radius: 2px;
+}
+.fotoItem__comment__delete_X:hover {
+  transform: scale(1.1);
+  cursor: default;
+  background-color: #3f020b;
+}
+.fotoItem__comment::-webkit-scrollbar {
+  width: 0;
+}
+/*# sourceMappingURL=foto.css.map */

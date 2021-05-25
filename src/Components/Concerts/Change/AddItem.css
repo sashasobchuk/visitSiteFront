@@ -1,0 +1,28 @@
+.addItem {
+  position: relative;
+  margin-left: 5%;
+  margin-right: 20%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #ffffff50;
+}
+.addItem > div {
+  display: block;
+  font-size: 30px;
+  margin: 10px;
+}
+.addItem__Addbtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #ffffff50;
+}
+.addItem__Addbtn:hover {
+  background-color: #ffffff90;
+}
+/*# sourceMappingURL=AddItem.css.map */

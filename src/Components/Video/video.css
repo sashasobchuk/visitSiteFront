@@ -1,0 +1,41 @@
+.videoPage {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-flow: row wrap;
+}
+.videoItem {
+  position: relative;
+  flex: auto;
+  width: 220px;
+  margin: 1%;
+  height: auto;
+  background-color: #ffffff50;
+  border-radius: 5px;
+  z-index: 0;
+}
+.videoItem__videoTag {
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 150px;
+  max-height: 400px;
+}
+.videoItem__comment {
+  display: flex;
+  margin: 2px;
+  border-radius: 10px;
+  background-color: #ffffff50;
+}
+.videoItem__deleteItem {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.videoItem__deleteItem input {
+  background-color: transparent;
+  border: 0;
+  font-size: 30px;
+}
+/*# sourceMappingURL=video.css.map */
